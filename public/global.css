@@ -83,7 +83,7 @@ main #globalData{
     resize: none;
     font-size: 1rem;
     border-radius: 5px;
-
+   padding-left: 2px;
     
 }
 

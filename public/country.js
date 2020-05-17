@@ -36,6 +36,7 @@ searchBox.addEventListener("input",()=>{
                }else{
                     searchItems[i].style.display = "block"
                     searchItems[i].addEventListener("click",()=>{
+                        searchBox.value = searchItems[i].textContent
                        searchMenu.style.display = "none"
                        fetch(`/countries?country=${searchItems[i].textContent}`).then(res=>res.json()).then(data=>{
                            if(!data.error){
