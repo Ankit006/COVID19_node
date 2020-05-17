@@ -1,0 +1,164 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header area */
+header *{
+ display: block; 
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header img{
+    height: 3rem;
+    width: 3rem;
+    padding: 0 0.5rem;
+}
+
+/* main area */
+main{
+    width: 100%;
+}
+main > h1{
+    text-transform:uppercase;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+
+}
+main #globalData{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     text-transform: uppercase;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+#globalData > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#globalData > div > h2{
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #424242;
+}
+
+.globalValue{
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* country search */
+
+#country-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#country-search h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+#search{
+    position: relative;
+}
+
+#country-search #search #search-box{
+    height: 2rem;
+    width: 12rem;
+    border: 1px solid #bdbdbd;
+    resize: none;
+    font-size: 1rem;
+    border-radius: 5px;
+
+    
+}
+
+
+#search-menu{
+    max-height: 15rem;
+    width: 12.2rem;
+    overflow-y: auto;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    display: none;
+    position: absolute;
+    background-color: white;
+
+}
+#search-menu .search-items{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-bottom: 0.2px solid #bdbdbd;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid #bdbdbd;
+    cursor: pointer;
+}
+
+/* country data */
+#country-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#country-data > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#country-data > div > h2{
+    font-size: 1.25rem;
+    color: #424242;
+}
+.countryValue{
+     margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:476px){
+  main #globalData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main #globalData > div > h2{
+    font-size: 1.25rem;
+    color: #424242;
+}
+main #globalData > div > .globalValue{
+    font-size: 2.5rem;
+}
+/* country  */
+#country-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+#country-data  > div > h2{
+    font-size: 1.25rem;
+    color: #424242;
+}
+#country-data > div > .countryValue{
+    font-size: 2.5rem;
+}
+}

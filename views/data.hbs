@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css">
+    <title>covid19</title>
+</head>
+<body>
+    {{!-- header --}}
+  <header>
+      <h1>COVID</h1>
+      <img src="./virus.png" alt="virus pic">
+      <h1>19</h1>
+  </header>
+  {{!-- main area --}}
+  <main  id="global">
+    <h1>Global</h1>
+     
+     {{!-- global data --}}
+    <div id="globalData">
+        <div>
+            <h2>Total</h2>
+            <p class="globalValue" id="global-total">...</p>
+        </div>
+        <div>
+              <h2>Deaths</h2>
+              <p  class="globalValue" id="global-death">...</p>
+        </div>
+      <div>
+            <h2>Recovered</h2>
+            <p  class="globalValue" id="global-recover">...</p>
+      </div>
+    </div> 
+
+  </main>
+
+  {{!-- country --}}
+
+    <div id="country-search">
+      <h1>Country</h1>
+      <div id="search">
+        <input type="text" placeholder=" Search..." id="search-box">
+        <div id="search-menu">
+        </div>
+      </div>
+    </div>
+{{!-- country data --}}
+<div id="country-data">
+   <div>
+            <h2>Total</h2>
+            <p class="countryValue" id="country-total">...</p>
+        </div>
+        <div>
+              <h2>Deaths</h2>
+              <p  class="countryValue" id="country-death">...</p>
+        </div>
+      <div>
+            <h2>Recovered</h2>
+            <p  class="countryValue" id="country-recover">...</p>
+      </div>
+    </div> 
+</div>
+ {{!-- script --}}
+ <script src="./global.js"></script>
+ <script src="./country.js"></script>
+</body>
+</html>
